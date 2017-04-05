@@ -1,4 +1,4 @@
-#Gobly Modular Framework for Go
+# Gobly Modular Framework for Go
 
 Gobly is a web framework concept that helps to build modular Go web applications. It aims to provide a set generic functions and utilities to develop loosely coupled modules using one generic user interface. Modules can be run either as single instance or in a complete application.
 
@@ -8,4 +8,4 @@ Gobly is using as many standard functions as possible and tries to be as transpa
 # Dependencies
 Gobly depends on following third-party projects:
 
-* [Gorilla Mux](https://github.com/gorilla/mux scripts) for routing
+* [Gorilla Mux](https://github.com/gorilla/mux) scripts for routing
