@@ -25,15 +25,17 @@ var funcMap = template.FuncMap{
 
 func LoadSingle(mainTemplate string) *template.Template {
 	mainTemplate = path.Join(packagePath(), mainTemplate)
+	footerTemplate := path.Join(core.CurrentPath("ui"), "html", "footer.html")
 	singleTemplate := path.Join(core.CurrentPath("ui"), "html", "single.html")
 
-	return template.Must(template.New("single.html").Funcs(funcMap).ParseFiles(singleTemplate, mainTemplate))
+	return template.Must(template.New("single.html").Funcs(funcMap).ParseFiles(singleTemplate, mainTemplate, footerTemplate))
 }
 
 func LoadDouble(mainTemplate string, sidebarTemplate string) *template.Template {
 	mainTemplate = path.Join(packagePath(), mainTemplate)
 	sidebarTemplate = path.Join(packagePath(), sidebarTemplate)
+	footerTemplate := path.Join(core.CurrentPath("ui"), "html", "footer.html")
 	doubleTemplate := path.Join(core.CurrentPath("ui"), "html", "double.html")
 
-	return template.Must(template.New("double.html").Funcs(funcMap).ParseFiles(doubleTemplate, mainTemplate, sidebarTemplate))
+	return template.Must(template.New("double.html").Funcs(funcMap).ParseFiles(doubleTemplate, mainTemplate, sidebarTemplate, footerTemplate))
 }
