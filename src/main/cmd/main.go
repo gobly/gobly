@@ -2,9 +2,9 @@ package main
 
 import (
 	"net/http"
-	"core"
+	"github.com/gobly/core"
 	"os"
-	"ui"
+	"github.com/gobly/ui"
 )
 
 var layoutSingle = ui.LoadSingle("html/main.html")
