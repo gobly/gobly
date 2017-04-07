@@ -18,6 +18,9 @@ func main() {
 	ui.CreateContext("/ui", router)
 	help.CreateContext("/help", router)
 
+	core.App.RegisterModule("Home", "/")
+	core.App.RegisterModule("About", "/help/about")
+
 	core.ShowWelcome(os.Stdout, router)
 	http.ListenAndServe(":8080", router)
 }
