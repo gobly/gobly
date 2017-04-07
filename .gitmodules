@@ -1,0 +1,6 @@
+[submodule "src/github.com/gobly/ui"]
+	path = src/github.com/gobly/ui
+	url = https://github.com/gobly/ui.git
+[submodule "src/github.com/gobly/core"]
+	path = src/github.com/gobly/core
+	url = https://github.com/gobly/core.git

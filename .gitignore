@@ -23,5 +23,5 @@ _testmain.go
 *.test
 *.prof
 
-src/github.com
-!src/github.com/gobly
+/src/github.com/*
+!/src/github.com/gobly/
