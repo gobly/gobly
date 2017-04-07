@@ -4,3 +4,6 @@
 [submodule "src/github.com/gobly/core"]
 	path = src/github.com/gobly/core
 	url = https://github.com/gobly/core.git
+[submodule "src/github.com/gobly/help"]
+	path = src/github.com/gobly/help
+	url = https://github.com/gobly/help.git
