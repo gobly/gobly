@@ -1,11 +1,11 @@
 package main
 
 import (
-	"net/http"
 	"github.com/gobly/core"
-	"os"
-	"github.com/gobly/ui"
 	"github.com/gobly/help"
+	"github.com/gobly/ui"
+	"net/http"
+	"os"
 )
 
 var layoutSingle = ui.LoadSingle("html/main.html")
@@ -18,8 +18,7 @@ func main() {
 	ui.CreateContext("/ui", router)
 	help.CreateContext("/help", router)
 
-	core.App.RegisterModule("Home", "/")
-	core.App.RegisterModule("About", "/help/about")
+	core.App.RegisterModule("Home", "/", "")
 
 	core.ShowWelcome(os.Stdout, router)
 	http.ListenAndServe(":8080", router)
