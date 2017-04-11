@@ -12,7 +12,7 @@ var layoutSingle = ui.LoadSingle("html/main.html")
 
 func main() {
 	router := core.NewRouter()
-	router.AddHandler("/", rootHandler)
+	router.AddGetHandler("/", rootHandler)
 
 	// Initialize modules
 	ui.CreateContext("/ui", router)
