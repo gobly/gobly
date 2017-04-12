@@ -24,5 +24,6 @@ _testmain.go
 *.prof
 
 /src/github.com/*
+/src/gopkg.in/*
 !/src/github.com/gobly/
 .idea/workspace.xml
