@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/gobly/core" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/gobly/mongo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/gobly/ui" vcs="Git" />
   </component>
 </project>
