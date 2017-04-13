@@ -7,3 +7,6 @@
 [submodule "src/github.com/gobly/help"]
 	path = src/github.com/gobly/help
 	url = https://github.com/gobly/help.git
+[submodule "src/github.com/gobly/mongo"]
+	path = src/github.com/gobly/mongo
+	url = https://github.com/gobly/mongo.git
