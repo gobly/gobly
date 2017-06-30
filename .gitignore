@@ -27,3 +27,4 @@ _testmain.go
 /src/gopkg.in/*
 !/src/github.com/gobly/
 .idea/workspace.xml
+.idea/misc.xml
